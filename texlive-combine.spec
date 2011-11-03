@@ -1,3 +1,9 @@
+# revision 19361
+# category Package
+# catalog-ctan /macros/latex/contrib/combine
+# catalog-date 2010-07-10 16:18:55 +0200
+# catalog-license lppl1.3
+# catalog-version 0.7a
 Name:		texlive-combine
 Version:	0.7a
 Release:	1
@@ -50,6 +56,7 @@ titling packages.
 #- source
 %doc %{_texmfdistdir}/source/latex/combine/combine.dtx
 %doc %{_texmfdistdir}/source/latex/combine/combine.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -60,3 +67,5 @@ titling packages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
