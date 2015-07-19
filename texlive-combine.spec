@@ -6,7 +6,7 @@
 # catalog-version 0.7a
 Name:		texlive-combine
 Version:	0.7a
-Release:	9
+Release:	10
 Summary:	Bundle individual documents into a single document
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/combine
