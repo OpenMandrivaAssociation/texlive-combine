@@ -1,19 +1,13 @@
-# revision 19361
-# category Package
-# catalog-ctan /macros/latex/contrib/combine
-# catalog-date 2010-07-10 16:18:55 +0200
-# catalog-license lppl1.3
-# catalog-version 0.7a
 Name:		texlive-combine
-Version:	0.7a
-Release:	11
+Version:	19361
+Release:	1
 Summary:	Bundle individual documents into a single document
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/combine
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combine.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combine.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combine.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combine.r19361.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combine.doc.r19361.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combine.source.r19361.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ of Contents. The package cooperates with the abstract and
 titling packages.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -49,24 +43,11 @@ titling packages.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.7a-2
-+ Revision: 750382
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.7a-1
-+ Revision: 718104
-- texlive-combine
-- texlive-combine
-- texlive-combine
-- texlive-combine
-
