@@ -5,9 +5,9 @@ Summary:	Bundle individual documents into a single document
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/combine
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combine.r19361.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combine.doc.r19361.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combine.source.r19361.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combine.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combine.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combine.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
