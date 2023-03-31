@@ -1,6 +1,6 @@
 Name:		texlive-combine
 Version:	19361
-Release:	1
+Release:	2
 Summary:	Bundle individual documents into a single document
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/combine
