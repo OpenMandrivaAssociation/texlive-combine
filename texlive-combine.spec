@@ -3,7 +3,7 @@ Version:	19361
 Release:	2
 Summary:	Bundle individual documents into a single document
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/combine
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/combine
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combine.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/combine.doc.r%{version}.tar.xz
